@@ -55,7 +55,8 @@ body{
 }
 #igual{
     grid-row: span 2;
-    background-color: rgb(233, 77, 20);
+    background: rgb(94,113,150);
+    background: linear-gradient(180deg, rgba(94,113,150,1) 0%, rgba(61,84,206,1) 78%);
 }
 #igual:hover{
     background-color: rgb(132, 167, 227);
