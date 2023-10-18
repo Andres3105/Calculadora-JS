@@ -14,7 +14,11 @@ botones.forEach(boton => {
         }
         if (boton.id === "igual") {
             try {
-                pantalla.textContent = eval(pantalla.textContent);
+                if (/[/]{2,}|[+]{2,}|[-]{2,}|[*]{2,}|[%]{2,}/.test(pantalla.textContent)) {
+                    pantalla.textContent = "Error";
+                } else {
+                    pantalla.textContent = eval(pantalla.textContent);
+                } 
             } catch {
                 pantalla.textContent = "Error";
             }
